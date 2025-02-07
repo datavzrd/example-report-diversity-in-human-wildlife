@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Datavzrd</title>
+</head>
+<body>
+<script src="./static/bundle.js"></script>
+<script type="text/javascript">
+    const urlParams = new URLSearchParams(window.location.search);
+    const viewParam = urlParams.get('view');
+    const version = '2.50.2';
+    const name = 'Rancher viewpoint diversity in human–wildlife coexistence management: The case of jaguar–livestock interaction in the region of Calakmul, Mexico';
+    const views = {"Landscape":"Choice situation for Landscape\nLandscape = percentage of cover\n&lt;small&gt;Alayon-Gamboa, J. A. &quot;Estrategias silvopastoriles para mitigar efectos del cambio climático en sistemas ganaderos del sur de México.&quot; Agro productividad 9.9 (2016). [DOI: 10.1002&#x2F;pan3.10739](https:&#x2F;&#x2F;doi.org&#x2F;10.1002&#x2F;pan3.10739)&lt;&#x2F;small&gt;\n","Type of livestock":"Choice situation for Type of livestock\n&lt;small&gt;Alayon-Gamboa, J. A. &quot;Estrategias silvopastoriles para mitigar efectos del cambio climático en sistemas ganaderos del sur de México.&quot; Agro productividad 9.9 (2016). [DOI: 10.1002&#x2F;pan3.10739](https:&#x2F;&#x2F;doi.org&#x2F;10.1002&#x2F;pan3.10739)&lt;&#x2F;small&gt;\n","Number of jaguars":"Choice situation for Number of jaguars\n&lt;small&gt;Alayon-Gamboa, J. A. &quot;Estrategias silvopastoriles para mitigar efectos del cambio climático en sistemas ganaderos del sur de México.&quot; Agro productividad 9.9 (2016). [DOI: 10.1002&#x2F;pan3.10739](https:&#x2F;&#x2F;doi.org&#x2F;10.1002&#x2F;pan3.10739)&lt;&#x2F;small&gt;\n","Willingness to invest ($)":"Choice situation for Willingness to invest ($)\nWillingness to invest = Willingness to invest in mitigation measures \n&lt;small&gt;Alayon-Gamboa, J. A. &quot;Estrategias silvopastoriles para mitigar efectos del cambio climático en sistemas ganaderos del sur de México.&quot; Agro productividad 9.9 (2016). [DOI: 10.1002&#x2F;pan3.10739](https:&#x2F;&#x2F;doi.org&#x2F;10.1002&#x2F;pan3.10739)&lt;&#x2F;small&gt;\n"};
+    const table = null;
+    let redirectUrl = viewParam ? `${viewParam}/index_1.html` : `${table}/index_1.html`;
+    urlParams.delete('view');
+    const remainingParams = urlParams.toString();
+    if (remainingParams) redirectUrl += `?${remainingParams}`;
+    if (table || viewParam) {
+        window.location.href = redirectUrl;
+    } else {
+        datavzrd.landing_page();
+    }
+</script>
+</body>
+</html>
